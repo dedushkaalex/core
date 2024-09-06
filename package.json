@@ -1,13 +1,41 @@
 {
-  "name": "core",
+  "name": "dedushkaalex-core",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "This monorepository is a collection of packages for linting, formatting, tests, typescript",
+  "keywords": [
+    "prettier",
+    "eslint",
+    "tsconfig",
+    "builder",
+    "jest",
+    "stylelint"
+  ],
+  "author": {
+    "name": "dedushkaalex",
+    "url": "https://github.com/dedushkaalex"
+  },
+  "bugs": {
+    "url": "https://github.com/dedushkaalex/core/issues"
+  },
+  "repository": {
+    "url": "https://github.com/dedushkaalex/core"
+  },
+  "workspaces": [
+    "tools/*"
+  ],
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "deploy": "turbo run deploy",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "change": "beachball change --no-commit",
+    "release": "beachball publish --yes"
   },
   "devDependencies": {
+    "beachball": "^2.46.0",
     "prettier": "^3.2.5",
     "turbo": "^2.1.1",
     "typescript": "^5.4.5"

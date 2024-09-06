@@ -1,0 +1,38 @@
+{
+  "name": "@dedushkaalex/prettier",
+  "description": "prettier configs",
+  "version": "1.0.0",
+  "keywords": [
+    "prettier"
+  ],
+  "author": {
+    "name": "dedushkaalex",
+    "url": "https://github.com/dedushkaalex"
+  },
+  "bugs": {
+    "url": "https://github.com/dedushkaalex/core/issues"
+  },
+  "repository": {
+    "url": "https://github.com/dedushkaalex/core"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    ".prettierrc.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"*.js\""
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
+  },
+  "peerDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "prettier": "^3.3.3"
+  }
+}
