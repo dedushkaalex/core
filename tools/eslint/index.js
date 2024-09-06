@@ -55,7 +55,7 @@ export const eslint = ({jsxA11y = false, next = false, ...options}, ...configs) 
 
   if (stylistic) {
     configs.unshift({
-      name: 'siberiacancode/formatter',
+      name: 'dedushkaalex/formatter',
       rules: {
         'style/multiline-ternary': 'off',
         'style/jsx-curly-newline': 'off',
